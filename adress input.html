@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Address Input Form</title>
+</head>
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.address-form {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+</style>
+<body>
+
+    <div class="address-form">
+        <label for="address">Enter Your Home Address:</label>
+        <input type="text" id="address" placeholder="Enter your address...">
+        <button onclick="submitAddress()">Submit</button>
+    </div>
+
+    <script>
+function submitAddress() {
+    var addressInput = document.getElementById('address');
+    var userAddress = addressInput.value;
+
+    // You can use 'userAddress' as needed, such as sending it to a server, storing it in a database, etc.
+    alert('Address submitted: ' + userAddress);
+}
+
+    </script>
+</body>
+</html>
