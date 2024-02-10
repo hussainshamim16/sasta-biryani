@@ -897,9 +897,8 @@ height: 90vh;
     border-radius: 20px;
     box-shadow: -7px 10px 23px 1px #00000046;
 
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./images/cocking\ 2.webp);
-
-    color: rgb(255, 255, 255);
+  background-color: white;
+    color: black;
 
     text-align: center;
     font-size: 9px;
